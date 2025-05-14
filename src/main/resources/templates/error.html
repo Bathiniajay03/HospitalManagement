@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+            background-color: #fff5f5;
+        }
+        .container {
+            width: 500px;
+            margin: 100px auto;
+            background: #ffe6e6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+            text-align: center;
+        }
+        h2 {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Something went wrong</h2>
+    <p th:text="${errorMessage}"></p>
+</div>
+</body>
+</html>

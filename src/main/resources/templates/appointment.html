@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <title>Book Appointment</title>
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="/css/nav.css" />
+	</head>
+
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#" class="nav-link">DISCOVER SITARA <span>&#9662;</span></a>
+        <div class="dropdown-content">
+          <a href="#">About Us</a>
+          <a href="#">Our Mission</a>
+          <a href="#">Our Values</a>
+        </div>
+      </li>
+      <li><a href="#" class="nav-link">FIND HOSPITAL <span>&#9662;</span></a>
+        <div class="dropdown-content">
+          <a href="#">Hospitals in India</a>
+          <a href="#">Hospitals Abroad</a>
+        </div>
+      </li>
+      
+      <li><a href="#" class="nav-link">MEDICAL SERVICES <span>&#9662;</span></a>
+        <div class="dropdown-content">
+          <a href="#">Cardiology</a>
+          <a href="#">Oncology</a>
+          <a href="#">Neurology</a>
+        </div>
+      </li>
+      <li><a href="#" class="nav-link">HEALTH LIBRARY <span>&#9662;</span></a>
+        <div class="dropdown-content">
+          <a href="#">Health Articles</a>
+          <a href="#">Health Tips</a>
+        </div>
+      </li>
+      <li><button class="icon-button"><img src="/images/icon.png" alt="Icon"></button></li>
+      <li>
+        <select name="language" id="language">
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Tamil">Tamil</option>
+        </select>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Appointment Form Section (Below Navbar) -->
+  <section class="appointment-section">
+    <h2 style="text-align:center;">Book an Appointment</h2>
+    <form action="/appointment" method="post">
+      <label for="patientName">Patient Name:</label>
+      <input type="text" id="patientName" name="patientName" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="doctor">Doctor:</label>
+      <input type="text" id="doctor" name="doctor" required />
+
+      <label for="appointmentTime">Appointment Time:</label>
+      <input type="datetime-local" id="appointmentTime" name="appointmentTime" required />
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </section>
+
+</body>
+</html>
+

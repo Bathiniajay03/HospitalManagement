@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment - Dr. Bhrath Reddy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef3f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #004080;
+            text-align: center;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0066cc;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004080;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Sitara Hospitals</h1>
+    <p>Book Appointment with Dr. Ajay Patil</p>
+</div>
+
+<div class="form-container">
+    <h2>Appointment Form</h2>
+    <form action="/submitAppointments" method="post">
+        <input type="hidden" name="doctorName" value="Dr. Bhrath Reddy" />
+        
+        <label>Patient Name:</label>
+        <input type="text" name="patientName" required />
+
+        <label>Appointment Date:</label>
+        <input type="date" name="date" required />
+
+        <label>Time:</label>
+        <select name="time" required>
+            <option value="">Select Time</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+        </select>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</div>
+
+<div class="footer">
+    <p>&copy; 2025 Sitara Hospitals. All rights reserved.</p>
+</div>
+
+</body>
+</html>

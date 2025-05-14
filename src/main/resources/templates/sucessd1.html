@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Appointment Success</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+            background-color: #e6ffee;
+        }
+        .container {
+            width: 500px;
+            margin: 100px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+            text-align: center;
+        }
+        h2 {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 th:text="${message}">Appointment booked successfully!</h2>
+    <p><strong>Patient Name:</strong> <span th:text="${patientName}"></span></p>
+    <p><strong>Appointment Date:</strong> <span th:text="${appointmentDate}"></span></p>
+    <p><strong>Time:</strong> <span th:text="${appointmentTime}"></span></p>
+</div>
+</body>
+</html>
+

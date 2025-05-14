@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Success</title>
+    <link rel="stylesheet" type="text/css" href="/css/style2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2e8b57;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background: #2e8b57;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        a.button:hover {
+            background: #246b46;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Appointment Successfully Booked!</h1>
+
+        <p th:text="${message}">Thank you for booking.</p>
+
+        <p th:text="'Thank you, ' + ${patientName} + '! Your appointment with Dr. ' + ${doctorName} + ' has been scheduled for ' + ${appointmentTime} + '.'">
+            Thank you, John! Your appointment with Dr. Smith has been scheduled.
+        </p>
+
+        <h1><p><strong>Token Number:</strong> <span th:text="${appointmentId}">12345</span></p></h1>
+
+        <a href="/" class="button">Go back to Homepage</a>
+    </div>
+</body>
+</html>

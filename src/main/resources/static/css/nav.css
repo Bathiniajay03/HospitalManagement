@@ -1,0 +1,166 @@
+/* nav.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f2f7ff, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #003366;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 16px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #0059b3;
+  border-radius: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  z-index: 1;
+  top: 100%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border-radius: 6px;
+}
+
+.dropdown-content a {
+  color: #003366;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f4ff;
+}
+
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+.icon-button img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+  cursor: pointer;
+}
+
+#language {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+
+/* Appointment Section */
+.appointment-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.appointment-section h2 {
+  margin-bottom: 20px;
+  color: #003366;
+  font-size: 28px;
+}
+
+.appointment-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-section label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.appointment-section input,
+.appointment-section select {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.appointment-section input:focus,
+.appointment-section select:focus {
+  outline: none;
+  border-color: #007acc;
+}
+
+.appointment-section button {
+  margin-top: 25px;
+  padding: 14px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.appointment-section button:hover {
+  background-color: #0059b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .appointment-section {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
